@@ -8,7 +8,6 @@ const app = express();
 const server = http.createServer(app);
 
 app.get("/", (req, res) => {
-  console.log("REQUEST CAME");
   res.send(`MADE api is active at ${new Date()}`);
 });
 

@@ -1,8 +1,6 @@
 import { io } from "socket.io-client";
 
-const socket = io(
-  "https://weary-cauldron-x5gvv5j9wxrghpx5x-5001.app.github.dev"
-);
+const socket = io(process.env.SOCKET_SERVER);
 
 console.log(socket);
 
