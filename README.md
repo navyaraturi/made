@@ -16,3 +16,8 @@ is built using next@16
 
 is built using express
 using socket.io
+
+task:
+
+1. create a button and whenever the button is clicked all the connected
+   clients get the message

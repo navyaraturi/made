@@ -21,8 +21,8 @@ const io = new Server(server, {
 io.on("connection", (socket) => {
   console.log(`User is connected with id: ${socket.id}`);
 
-  socket.on("client_ready", (d) => {
-    console.log("client is ready", d);
+  socket.on("button_press", (d) => {
+    socket.broadcast.emit("message", d);
   });
 });
 
