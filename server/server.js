@@ -5,6 +5,10 @@ const PORT = Bun.env.PORT || 3001;
 
 const app = express();
 
+app.get("/", (req, res) => {
+  res.send(`MADE api is active at ${new Date()}`);
+});
+
 app.listen(PORT, () => {
   console.log(`server started on port ${PORT}`);
 });
