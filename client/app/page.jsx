@@ -3,7 +3,6 @@ import { io } from "socket.io-client";
 import { useEffect, useState } from "react";
 
 const socket = io(process.env.NEXT_PUBLIC_SOCKET_SERVER);
-console.log(process.env.NEXT_PUBLIC_SOCKET_SERVER);
 
 export default function Home() {
   const [name, setName] = useState("");
