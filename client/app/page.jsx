@@ -1,4 +1,10 @@
-import Image from "next/image";
+import { io } from "socket.io-client";
+
+const socket = io(
+  "https://weary-cauldron-x5gvv5j9wxrghpx5x-5001.app.github.dev"
+);
+
+console.log(socket);
 
 export default function Home() {
   return (
